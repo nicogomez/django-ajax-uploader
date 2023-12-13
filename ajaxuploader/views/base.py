@@ -23,7 +23,7 @@ class AjaxFileUploader(object):
 
     def _ajax_upload(self, request, *args, **kwargs):
         if request.method == "POST":
-            if request.is_ajax():
+            if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
                 # the file is stored raw in the request
                 upload = request
                 is_raw = True

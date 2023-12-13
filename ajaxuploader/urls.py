@@ -1,4 +1,7 @@
-from django.conf.urls import patterns, url
+try:
+    from django.conf.urls import patterns, url
+else:
+    from django.urls import patterns, re_path as url
 
 from .views import handle_s3, success_redirect_endpoint
 
