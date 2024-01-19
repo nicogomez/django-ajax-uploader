@@ -469,6 +469,10 @@ Credits and Updates
 
 Many thanks to all for writing such helpful and readable code!
 
+0.3.9
+
+* Django 4.2 support
+
 0.3.8
 
 * `backends.path` property added by [gilsondev](https://github.com/gilsondev)
